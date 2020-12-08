@@ -7,7 +7,7 @@ import linecache
 import re
 
 class Num_Finder:
-    file_name = "input.txt"
+    file_name = "inputs/inputd1.txt"
     firstnum = ""
     secondNum = ""
 
@@ -39,5 +39,3 @@ class Num_Finder:
 if __name__ == '__main__':
     nm = Num_Finder()
     nm.find_nums()
-
-
