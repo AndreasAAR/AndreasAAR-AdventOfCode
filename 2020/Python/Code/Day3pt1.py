@@ -31,7 +31,7 @@ class TreeCounter:
             if height != hill_len-1:
                 object = (all_lines[height+1])[int(pattern_pos):int(pattern_pos+1)]
                 self.trees = self.trees+1 if object == self.tree else self.trees
-
+            print(line)
 
     # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
