@@ -6,8 +6,6 @@ import linecache
 
 import re
 
-import re
-
 
 
 class TreeCounter:
@@ -34,11 +32,10 @@ class TreeCounter:
                 passLines.clear()
             else:
                 passLines.append(line)
-
         print(self.valid_passports)
 
     def correct_passport(self,token_lines,line_count):
-        tokens = []
+        tokens = {}
         pairs = []
         if(len(token_lines) == 0):
             return False
@@ -47,31 +44,37 @@ class TreeCounter:
             pairs.extend(line.split(" "))
 
         for pair in pairs:
-            tokens.append(pair.split(":")[0])
+            key = pair.split(":")[0]
+            value = pair.split(":")[1]
+            tokens[key] = value
 
-        return self.correct_tokens(tokens,line_count)
+        if not (self.correct_tokens(tokens.keys(),line_count)):
+           return False
+        return True
+
+
 
     def correct_tokens(self, tokens,line_count):
        if not 'byr' in tokens:
-           print("byr miss", line_count)
+        #   print("byr miss at line" , line_count)
            return False
        if not 'iyr' in tokens:
-           print("iyr miss", line_count)
+         #  print("iyr miss at line", line_count)
            return False
        if not 'eyr' in tokens:
-           print("eyr miss", line_count)
+       #    print("eyr miss at line", line_count)
            return False
        if not  'hgt' in tokens:
-           print("hgt miss", line_count)
+        #   print("hgt miss at line", line_count)
            return False
        if not 'hcl' in tokens:
-           print("hcl miss", line_count)
+       #    print("hcl miss at line", line_count)
            return False
        if not  'ecl' in tokens:
-           print("ecl miss", line_count)
+       #    print("ecl miss at line", line_count)
            return False
        if not  'pid' in tokens:
-           print("pid miss", line_count)
+        #   print("pid miss at line", line_count)
            return False
        return True
 

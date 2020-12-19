@@ -6,8 +6,6 @@ import linecache
 
 import re
 
-import re
-
 
 
 class TreeCounter:
@@ -34,7 +32,6 @@ class TreeCounter:
                 passLines.clear()
             else:
                 passLines.append(line)
-
         print(self.valid_passports)
 
     def correct_passport(self,token_lines,line_count):
@@ -60,42 +57,69 @@ class TreeCounter:
     def correct_values(self, tokens,line_count):
        byr = tokens.get('byr')
        if int(byr)<1920 or int(byr)>2002:
-           print("byr wrong", byr)
+           print("byr wrong", byr, " at line ", line_count)
            return False
        iyr = tokens.get('iyr')
        if int(iyr) < 2010 or int(iyr) > 2020:
-           print("iyr wrong", iyr)
+           print("iyr wrong", iyr, " at line ", line_count)
            return False
        eyr = tokens.get('eyr')
-       if int(eyr) < 2010 or int(eyr) > 2020:
-           print("eyr wrong", eyr)
+       if int(eyr) < 2010 or int(eyr) > 2030:
+           print("eyr wrong", eyr, " at line ", line_count)
            return False
-       hgt_denom = tokens.get('hgt')
+       hgt_val =  re.sub( "[^0-9]", "",tokens.get('hgt')  )
+       hgt_denom = re.sub("[0-9]", "", tokens.get('hgt'))
+       hgt_denom = re.sub("\n", "", hgt_denom)
+       if hgt_denom == 'cm':
+           if int(hgt_val) < 150 or int(hgt_val) > 193:
+               print("hgt_val wrong",hgt_denom ,hgt_val, " at line ", line_count)
+               return False
+       if hgt_denom == 'in':
+           if int(hgt_val) < 59 or int(hgt_val) > 76:
+               print("hgt_val wrong",hgt_denom ,hgt_val, " at line ", line_count)
+               return False
+       if hgt_denom != 'in' and hgt_denom != 'cm':
+           print("hgt_denom wrong", hgt_denom, hgt_val, " at line ", line_count)
+           return False
 
-
+       hcl  = tokens.get('hcl')
+       hcl  = re.sub("\n", "", hcl)
+       if not re.match("^#((?:[a-f0-9]){6})$", hcl):
+           print("hcl wrong", hcl, " at line ", line_count)
+           return False
+       pid = tokens.get('pid')
+       pid = re.sub("\n", "", pid)
+       if not re.match("^([0-9]{9})$", pid):
+           print("pid wrong", pid, " at line ", line_count)
+           return False
+       ecl = tokens.get('ecl')
+       ecl = re.sub("\n", "", ecl)
+       if not re.match("amb|blu|brn|gry|grn|hzl|oth",ecl):
+           print("ecl wrong", ecl, " at line ", line_count)
+           return False
        return True
 
     def correct_tokens(self, tokens,line_count):
        if not 'byr' in tokens:
-           print("byr miss", line_count)
+        #   print("byr miss at line" , line_count)
            return False
        if not 'iyr' in tokens:
-           print("iyr miss", line_count)
+         #  print("iyr miss at line", line_count)
            return False
        if not 'eyr' in tokens:
-           print("eyr miss", line_count)
+       #    print("eyr miss at line", line_count)
            return False
        if not  'hgt' in tokens:
-           print("hgt miss", line_count)
+        #   print("hgt miss at line", line_count)
            return False
        if not 'hcl' in tokens:
-           print("hcl miss", line_count)
+       #    print("hcl miss at line", line_count)
            return False
        if not  'ecl' in tokens:
-           print("ecl miss", line_count)
+       #    print("ecl miss at line", line_count)
            return False
        if not  'pid' in tokens:
-           print("pid miss", line_count)
+        #   print("pid miss at line", line_count)
            return False
        return True
 
