@@ -10,39 +10,72 @@ import re
 
 
 
-class TreeCounter:
-    rows =
 
-    def count_passports(self,file_name):
+class TicketCounter:
+
+    class Ticket:
+        def __init__(self, id, row, column):
+            self.id = id
+            self.row = row
+            self.column = column
+
+    def count_tickets(self,file_name):
         file = open(file_name)
         all_lines = file.readlines()
         passLines = []
         line_count = 0
         pass_line_count = 0
         num_lines = len(all_lines)
-        for line in all_lines:
-            pass_line_count += 1
-            line_count += 1
-            if line == "\n" or line_count == num_lines:
-                if line_count == num_lines:
-                    passLines.append(line)
-                self.valid_passports += 1 if self.correct_passport(passLines,line_count-pass_line_count) else 0
-                pass_line_count = 0
-                passLines.clear()
-            else:
-                passLines.append(line)
+        tickets = []
 
-        print(self.valid_passports)
+        for line in all_lines:
+           tickets.append(self.process_line(line))
+
+        self.print_biggest(tickets)
+
+    def print_biggest(self,tickets):
+        biggest_id = 0
+        for ticket in tickets:
+            if ticket.id >= biggest_id:
+                biggest_id = ticket.id
+        print(biggest_id)
+
+    def process_line(self,line):
+        line = line.replace("\n","")
+        row = self.get_row(line[:7])[0]
+        column = self.get_column(line[7:])[0]
+        print("row",row)
+        print('column',column)
+        id = self.seat_id(row,column)
+        print("id", id)
+        new_ticket = self.Ticket(id,row, column)
+        return new_ticket
+
+    def get_column(self,line):
+        cols_remaining = []
+        cols_remaining.extend(range(0, 8))
+        for direction in line:
+            half = int(len(cols_remaining) / 2)
+            cols_remaining = cols_remaining[half:] if direction == 'R' else cols_remaining[:half]
+        return cols_remaining
+
+    def get_row(self,line):
+        rows_remaining = []
+        rows_remaining.extend(range(0,128))
+        for direction in line:
+            half = int(len(rows_remaining)/2)
+            rows_remaining =  rows_remaining[half:] if direction == 'B' else rows_remaining[:half]
+        return rows_remaining
 
     def seat_id(self,row,column):
-        return row*8+column
+        return int(row)*8+int(column)
 
 
 
 
     # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    nm = TreeCounter()
-    nm.count_passports("Inputs/Inputd4.txt")
+    tc = TicketCounter()
+    tc.count_tickets("Inputs/Inputd5.txt")
 
 
