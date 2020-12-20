@@ -13,9 +13,7 @@ https://adventofcode.com/2020/
 - [x] 3.2 🌲 
 - [x] 4.1 🔎
 - [x] 4.2 🔬
-
 ....
-
 - [ ] 24.1
 - [ ] 24.2
 
@@ -27,3 +25,6 @@ My first advent of Code, written in Python  🐍
 - [x] 2.2 
 - [x] 3.1 
 - [x] 3.2  
+....
+- [ ] 24.1
+- [ ] 24.2
