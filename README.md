@@ -7,6 +7,9 @@ https://adventofcode.com/2020/
 
 <details>
   <summary>Click to expand! 🐌</summary>
+  
+  ### Goal = 15 days
+  
 - [x] 1  🐙
 - [x] 1.2 🐌
 - [x] 2.1 🦎
@@ -26,6 +29,9 @@ https://adventofcode.com/2020/
 My first advent of Code, written in Python  🐍
 <details>
   <summary>Click to expand! 🐌</summary>
+  
+   ### Goal = 15 days
+  
 - [x] 1  
 - [x] 1.2 
 - [x] 2.1 
@@ -38,3 +44,35 @@ My first advent of Code, written in Python  🐍
 - [ ] 24.1
 - [ ] 24.2
 </details>
+
+## 2018 (not started)
+To be written in C#
+<details>
+  <summary>Click to expand! 🐌</summary>
+  
+   ### Goal = 15 days
+  
+- [] 1  
+- [] 1.2 
+....
+
+- [ ] 24.1
+- [ ] 24.2
+</details>
+
+## 2017 (not started)
+To be written in Java
+<details>
+  <summary>Click to expand! 🐌</summary>
+  
+   ### Goal = 15 days
+  
+- [] 1  
+- [] 1.2 
+....
+
+- [ ] 24.1
+- [ ] 24.2
+</details>
+
+
