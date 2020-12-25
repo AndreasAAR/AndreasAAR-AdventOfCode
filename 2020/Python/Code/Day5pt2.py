@@ -41,8 +41,8 @@ class TicketCounter:
         self.find_my_ticket_id(tickets)
 
     def find_my_ticket_id(self,tickets):
-        rows, cols = 126,7
-        plane_seats = [[0 for x in range(rows)] for y in range(cols)]
+        rows, cols = 127,8
+       # plane_seats = [[0 for x in range(rows)] for y in range(cols)]
 
         #for col in range(0,cols):
         #    for row in range(0,rows):
@@ -51,18 +51,13 @@ class TicketCounter:
         correct_id = 0
         id_tickets = {}
         for ticket in tickets:
-            id_tickets.put(ticket.id,ticket)
+            id_tickets[ticket.id]=ticket
 
-        sorted_ids = sorted(id_tickets.keys())
-
-        for i in range(0,len(sorted_ids)):
-            if id != sorted_ids[num_tickets]:
-                ticket = id_tickets.get(id)
-
-
-
-
-        #plane_seats = self.populate_seats(plane_seats, tickets)
+        for ticket in tickets:
+            id = ticket.id
+            if id+2 in id_tickets.keys() and not id+1 in id_tickets.keys():
+                    correct_id = id+1
+        print("Found it:", correct_id)
 
     def populate_seats(self, plane_seats, tickets):
        rows = len(plane_seats[0])
@@ -91,10 +86,7 @@ class TicketCounter:
         line = line.replace("\n","")
         row = self.get_row(line[:7])[0]
         column = self.get_column(line[7:])[0]
-        print("row",row)
-        print('column',column)
         id = self.seat_id(row,column)
-        print("id", id)
         new_ticket = self.Ticket(id,row, column)
         return new_ticket
 
