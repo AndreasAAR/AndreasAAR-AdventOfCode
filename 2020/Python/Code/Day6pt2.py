@@ -24,23 +24,33 @@ class YesCounter:
             if line != '\n':
                 group_lines.append(line)
             if line == '\n' or i == len(all_lines)-1:
-                num_groups_questions_least_1_yes += self.num_questions_1_yes_least(group_lines)
+                num_groups_questions_least_1_yes += self.num_questions_all_yes(group_lines)
                 group_lines = []
 
         print(num_groups_questions_least_1_yes)
 
 
-    def num_questions_1_yes_least(self,group_arr):
-        yes_questions_set = set()
+    def num_questions_all_yes(self,group_arr):
+        num_people = len(group_arr)
+        yes_question_answers = {}
         print("group array:", group_arr)
+        num_all_yes_questions = 0
         for line in group_arr:
             line = line.replace("\n","")
             print("Line:", line)
             for character in line:
+                print("character:", character)
                 if re.match("[a-zA-Z]",character):
-                    yes_questions_set.add(character)
-        print("set:",yes_questions_set)
-        return len(yes_questions_set)
+                    if character in yes_question_answers.keys():
+                        yes_question_answers[character] +=1
+                    else:
+                        yes_question_answers[character] = 1
+        print("set:",yes_question_answers)
+        for num in yes_question_answers.values():
+             if num == num_people:
+                 num_all_yes_questions+=1
+
+        return num_all_yes_questions
 
 
 

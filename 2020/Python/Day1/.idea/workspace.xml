@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e77e849c-fd96-441d-a3b5-f1bf2281e7b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Code/Day6pt1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Code/Inputs/inputd6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/Day6pt2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Day6pt2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
       <recent name="D:\Dropbox\Andreas\PLUGG_JOBB\VT2020\Kodövning\AdventOfCode\2020\Python\Code\Inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Day6pt1">
+  <component name="RunManager" selected="Python.Day6pt2">
     <configuration name="Day4pt1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,28 +60,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Code/Day4pt1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Day4pt2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Code/Day4pt2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,13 +134,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Day6pt2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Code/Day6pt2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day6pt2" />
         <item itemvalue="Python.Day6pt1" />
         <item itemvalue="Python.Day5pt2" />
         <item itemvalue="Python.Day5pt1" />
         <item itemvalue="Python.Day4pt1" />
-        <item itemvalue="Python.Day4pt2" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +178,7 @@
       <workItem from="1608142818356" duration="13488000" />
       <workItem from="1608386747369" duration="20814000" />
       <workItem from="1608581499478" duration="559000" />
-      <workItem from="1608850098672" duration="8677000" />
+      <workItem from="1608850098672" duration="10409000" />
     </task>
     <servers />
   </component>
@@ -239,9 +238,10 @@
     <SUITE FILE_PATH="coverage/Day1$Day3pt2.coverage" NAME="Day3pt2 Coverage Results" MODIFIED="1607896877536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
     <SUITE FILE_PATH="coverage/Day1$Day5pt2.coverage" NAME="Day5pt2 Coverage Results" MODIFIED="1608901921337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
     <SUITE FILE_PATH="coverage/Day1$Day3pt1.coverage" NAME="Day3pt1 Coverage Results" MODIFIED="1607879795493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
-    <SUITE FILE_PATH="coverage/Day1$Day6pt1.coverage" NAME="Day6pt1 Coverage Results" MODIFIED="1608902240462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
+    <SUITE FILE_PATH="coverage/Day1$Day6pt1.coverage" NAME="Day6pt1 Coverage Results" MODIFIED="1608902252094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
     <SUITE FILE_PATH="coverage/Day1$Day4pt2.coverage" NAME="Day4pt2 Coverage Results" MODIFIED="1608394173597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
     <SUITE FILE_PATH="coverage/Day1$Day5pt1.coverage" NAME="Day5pt1 Coverage Results" MODIFIED="1608423021346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
     <SUITE FILE_PATH="coverage/Day1$Day4pt1.coverage" NAME="Day4pt1 Coverage Results" MODIFIED="1608403051497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
+    <SUITE FILE_PATH="coverage/Day1$Day6pt2.coverage" NAME="Day6pt2 Coverage Results" MODIFIED="1608904274849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Code" />
   </component>
 </project>
