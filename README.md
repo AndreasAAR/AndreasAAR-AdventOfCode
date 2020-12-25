@@ -22,6 +22,7 @@ https://adventofcode.com/2020/
 - [x] 5.2 🛩️ :ticket:
 - [x] 6.1 :clipboard:
 - [x] 6.2 :chart_with_upwards_trend:
+
 ....
 
 - [ ] 24.1
@@ -72,6 +73,7 @@ To be written in Java
   
 - [] 1  
 - [] 1.2 
+
 ....
 
 - [ ] 24.1
