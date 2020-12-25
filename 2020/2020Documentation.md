@@ -16,9 +16,9 @@ https://adventofcode.com/2020/
 - [ ] 24.1
 - [ ] 24.2
 
-- <img src="https://latex.codecogs.com/png.latex?O_t=\text { Onset event at time bin } t " /> 
+- <img src="https://latex.codecogs.com/png.latex?O_t=\text { Onset event at time  } t " /> 
 - <img src="https://latex.codecogs.com/png.latex?s=\text { sensor reading }  " /> 
-- <img src="https://latex.codecogs.com/png.latex?P(s | O_t )=\text { Probability of a sensor reading value when sleep onset is observed at a time bin } t " />
+- <img src="https://latex.codecogs.com/png.latex?P(s | O_t )=\text { Probability of a sensor reading value when the sleep onset is observed at a time  } t " />
 
 ![equation](http://latex.codecogs.com/png.latex?O_t%3D%5Ctext%20%7B%20Onset%20event%20at%20time%20bin%20%7D%20t)
 ![equation](http://latex.codecogs.com/png.latex?s%3D%5Ctext%20%7B%20sensor%20reading%20%7D) 
