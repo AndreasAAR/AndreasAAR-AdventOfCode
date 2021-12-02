@@ -1,5 +1,14 @@
 # AndreasAAR-AdventOfCode 🎅
 
+## 2021
+
+My third advent of Code, also written in Python 🐍 
+https://adventofcode.com/2020/
+
+- [x] 1  🛥️
+- [x] 1.2 🐬 
+- [x] 2.1 ☃️
+
 ## 2020
 
 My second advent of Code, written in Python 🐍 
@@ -10,7 +19,7 @@ https://adventofcode.com/2020/
   
   ### Goal = 15 days
   
-- [x] 1  🦜
+- [x] 1  🚢
 - [x] 1.2 🌴 
 - [x] 2.1 ☃️
 - [x] 2.2 ❄️
