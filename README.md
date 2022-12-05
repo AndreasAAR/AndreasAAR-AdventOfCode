@@ -20,7 +20,7 @@ https://adventofcode.com/2021/
 - [x] 1  🛥️
 - [x] 1.2 🐬 
 - [x] 2.1 ☃️
-<details>
+</details>
 ## 2020
 
 My second advent of Code, written in Python 🐍 
