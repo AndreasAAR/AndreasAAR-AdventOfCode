@@ -4,7 +4,7 @@
 My fourth advent of Code, also written in Python 🐍 
 https://adventofcode.com/2022/
 
-</details>
+<details>
 <summary>Click to expand! 🐌</summary>
 
 - [x] 1  🛥️
@@ -19,9 +19,11 @@ My third advent of Code, also written in Python 🐍
 https://adventofcode.com/2021/
 <details>
   <summary>Click to expand! 🐌</summary>
+  
 - [x] 1  🛥️
 - [x] 1.2 🐬 
 - [x] 2.1 ☃️
+  
 </details>
 ## 2020
 
