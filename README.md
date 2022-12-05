@@ -6,9 +6,11 @@ https://adventofcode.com/2022/
 
 </details>
 <summary>Click to expand! 🐌</summary>
+
 - [x] 1  🛥️
 - [] 1.2 🐬 
 - [] 2.1 ☃️
+
 </details>
 
 
