@@ -1,0 +1,4 @@
+2023.12.01 08:02:18 INFO  Started: Metals version 1.1.0 in folders 'D:\Dropbox\Andreas\PLUGG_JOBB\Projects\AndreasAAR-AdventOfCode' for client Visual Studio Code 1.79.2.
+2023.12.01 08:02:19 WARN  Build server is not auto-connectable.
+2023.12.01 08:02:19 WARN  no build tool detected in workspace 'D:\Dropbox\Andreas\PLUGG_JOBB\Projects\AndreasAAR-AdventOfCode'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.12.01 08:02:19 WARN  no build target for: D:\Dropbox\Andreas\PLUGG_JOBB\Projects\AndreasAAR-AdventOfCode\2023\adventofcodescala\src\main\scala\example\Hello.scala
