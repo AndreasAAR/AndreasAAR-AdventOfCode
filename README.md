@@ -1,17 +1,5 @@
 # AndreasAAR-AdventOfCode 🎅
 
-## 2022
-My fourth advent of Code, also written in Python 🐍 
-https://adventofcode.com/2022/
-
-<details>
-<summary>Click to expand! 🐌</summary>
-
-- [x] 1  🛥️
-- [] 1.2 🐬 
-- [] 2.1 ☃️
-
-</details>
 
 
 ## 2021
@@ -69,40 +57,7 @@ My first advent of Code, written in Python  🐍
 - [x] 3.1 
 - [x] 3.2  
 
-....
 
-- [ ] 24.1
-- [ ] 24.2
-</details>
-
-## 2018 (not started)
-To be written in C#
-<details>
-  <summary>Click to expand! 🐌</summary>
-  
-   ### Goal = 15 days
-  
-- [] 1  
-- [] 1.2 
-....
-
-- [ ] 24.1
-- [ ] 24.2
-</details>
-
-## 2017 (not started)
-To be written in Java
-<details>
-  <summary>Click to expand! 🐌</summary>
-  
-   ### Goal = 15 days
-  
-- [] 1  
-- [] 1.2 
-
-....
-
-- [ ] 24.1
 - [ ] 24.2
 </details>
 
