@@ -7,10 +7,10 @@ My third advent of Code, also written in Python 🐍
 https://adventofcode.com/2021/
 <details>
   <summary>Click to expand! 🐌</summary>
+### OBS! Most of the code was written in a external notebook program
+
+I did 1-16 this period.
   
-- [x] 1  🛥️
-- [x] 1.2 🐬 
-- [x] 2.1 ☃️
   
 </details>
 
@@ -39,12 +39,6 @@ https://adventofcode.com/2020/
 - [x] 6.1 :clipboard:
 - [x] 6.2 :chart_with_upwards_trend:
 
-
-
-....
-
-- [ ] 24.1
-- [ ] 24.2
 </details>
 
 ## 2019
@@ -62,8 +56,6 @@ My first advent of Code, written in Python  🐍
 - [x] 3.1 
 - [x] 3.2  
 
-
-- [ ] 24.2
 </details>
 
 
