@@ -21,6 +21,8 @@ https://adventofcode.com/2020/
 
 <details>
   <summary>Click to expand! 🐌</summary>
+
+### OBS! Most of the code was written in a external notebook program
   
   ### Goal = 15 days
   
@@ -37,6 +39,8 @@ https://adventofcode.com/2020/
 - [x] 6.1 :clipboard:
 - [x] 6.2 :chart_with_upwards_trend:
 
+
+
 ....
 
 - [ ] 24.1
@@ -48,6 +52,7 @@ My first advent of Code, written in Python  🐍
 <details>
   <summary>Click to expand! 🐌</summary>
   
+### OBS! Most of the code was written in a external notebook program
    ### Goal = 15 days
   
 - [x] 1  
